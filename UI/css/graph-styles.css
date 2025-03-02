@@ -1,0 +1,184 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff2200d3, #ffcc00);
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: transparent;
+    color: #fffb00;
+    border-radius: 20px;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center; /* 居中 */
+    margin-bottom: 20px;
+}
+
+.search-section form {
+    display: flex;
+    align-items: center;
+    width: 60%; /* 确保表单宽度自适应 */
+   /* max-width: 600px; 设置最大宽度 */
+}
+
+
+.search-section input[type="text"] {
+    padding: 10px;
+    border: 1px solid #a4a1a1;
+    border-radius: 20px;
+    width: 100%; /* 缩短输入框长度 */
+    margin-right: 10px; /* 输入框与按钮之间的间距 */
+}
+
+.search-section button{
+    padding: 10px 20px; /* 增加按钮的左右内边距 */
+    border: 1px solid #a4a1a1; /* 移除默认边框 */
+    background-color: #ffffff;
+    font-size: 15px; /* 设置字体大小 */
+    cursor: pointer; /* 改变鼠标指针形状 */
+    border-radius: 20px; /* 圆角效果 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+.search-section .search-button, .search-section .advanced-search-button {
+    white-space: nowrap; /* 防止文本换行 */
+    padding: 10px 20px; /* 增加按钮的左右内边距 */
+    border: none;
+    background-color: #ffffff;
+    color: #a4a1a1;
+    
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    min-width: 100px; /* 确保按钮有足够的宽度 */
+}
+
+
+/* 当鼠标悬停在按钮上时改变背景颜色 */
+.search-button:hover, .advanced-search-button:hover {
+    background-color: #a4a1a1;
+    color: #ffffff;
+}
+
+/* 可选：使两个按钮在一行显示，并调整间距 */
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input[type="text"], form button {
+    margin: 5px 0; /* 上下外边距 */
+}
+
+form button + button {
+    margin-left: 10px; /* 按钮之间的间距 */
+}
+
+.content-area {
+    padding: 20px;
+    border: 1px solid #a4a1a1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 20px auto;
+
+     /* 自适应宽度 */
+    width: 80%; /* 宽度为父容器的80% */
+    max-width: 1200px; /* 最大宽度 */
+     
+     /* 自适应高度 */
+    height: 80%; /* 高度为父容器的50% */
+    min-height: 450px; /* 最小高度 */
+    
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-list{
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.knowledge-graph{
+    flex: 2;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+footer {
+    background-color: transparent;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center; /* 确保直接包含在 <footer> 标签内的文本居中 */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* 可选：增加一些左右内边距 */
+}
+
+.copyright, .contact-info {
+    color: #ffffff;
+    flex: 1; /* 让每个部分占据相等的空间 */
+    text-align: left; /* 确保内容左对齐 */
+}
+
+.contact-info {
+    text-align: left; /* 确保联系信息左对齐 */
+}
+
+/* 可选：调整标题样式 */
+.contact-info h3 {
+    margin-top: 0; /* 移除默认的顶部外边距 */
+}
